@@ -21,9 +21,7 @@ public class ProductService {
 
 	// create
 	public void createProduct(Product product) {
-
 		this.productRepository.save(product);
-
 	}
 
 	// get all products

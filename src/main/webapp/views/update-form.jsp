@@ -13,7 +13,7 @@
 
 				<h1 class="text-center mb-3">Change Product Details</h1>
 
-				<form action="${pageContext.request.contextPath }/handle_product_update" method="post">
+				<form action="${pageContext.request.contextPath}/handle_product_update" method="post">
 				<input type="hidden" value="${product.id }" name="id">
 					<div class="form-group">
 						<label for="name">Product Name</label><input type="text"
@@ -40,6 +40,5 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
