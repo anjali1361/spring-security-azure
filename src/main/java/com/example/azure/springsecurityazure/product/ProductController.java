@@ -35,7 +35,7 @@ public class ProductController {
 	}
 	
 	//handle add-product form and return to home after adding
-	@RequestMapping(value="/handle_product_add", method=RequestMethod.POST)
+	@RequestMapping(value="/handle_product_add",method=RequestMethod.POST)
 	public String handleProduct(@ModelAttribute Product product) {
 		System.out.println(product);
 		productService.createProduct(product);
@@ -64,8 +64,7 @@ public class ProductController {
 		}
 		
 	}
-	
-	@RequestMapping(value="/handle_product_update", method=RequestMethod.POST)
+	@RequestMapping(value="/handle_product_update",method=RequestMethod.POST)
 	public String handleProductUpdate(@ModelAttribute Product product) {
 		System.out.println(product);
 		this.productService.updateProduct(product);
