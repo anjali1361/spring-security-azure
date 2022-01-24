@@ -10,7 +10,7 @@
 	<div class="container mt-3">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="text-center mb-3">Welcome to Product App</h1>
+				<h1 class="text-center mb-3">Welcome to Product App:${author }</h1>
 				<table class="table">
 					<thead class="thead-dark">
 						<tr>

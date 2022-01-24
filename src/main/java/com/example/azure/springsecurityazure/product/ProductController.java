@@ -1,5 +1,6 @@
 package com.example.azure.springsecurityazure.product;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,9 +22,10 @@ public class ProductController {
 	//show home
 	@RequestMapping("/")
 	@PreAuthorize("hasRole('ROLE_group1')")
-	public String home(Model m) {
+	public String home(Model m,Principal principal) {
 		List<Product> products = productService.getProducts();
 		m.addAttribute("products",products);
+		m.addAttribute("author",principal.getName());
 		return "index";
 	}
 	
@@ -69,6 +71,12 @@ public class ProductController {
 		System.out.println(product);
 		this.productService.updateProduct(product);
 		return "redirect:/";
+	}
+	
+	@RequestMapping("/group2")
+	@PreAuthorize("hasRole('ROLE_group2')")
+	public String checkAuthorization() {
+		return "error";
 	}
 
 }
