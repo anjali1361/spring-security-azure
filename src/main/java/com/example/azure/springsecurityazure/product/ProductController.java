@@ -24,8 +24,8 @@ public class ProductController {
 	@PreAuthorize("hasRole('ROLE_group1')")
 	public String home(Model m,Principal principal) {
 		List<Product> products = productService.getProducts();
-		m.addAttribute("products",products);
 		m.addAttribute("author",principal.getName());
+		m.addAttribute("products",products);
 		return "index";
 	}
 	
