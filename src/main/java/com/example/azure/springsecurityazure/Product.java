@@ -1,4 +1,4 @@
-package com.example.azure.springsecurityazure.product;
+package com.example.azure.springsecurityazure;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
