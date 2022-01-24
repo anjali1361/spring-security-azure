@@ -17,8 +17,9 @@
 
 ## To run this application
 * Fork & Clone the project.
-* Create MySQL database instance(either setup local or cloud server) and then replace connection string, username and password in file "spring-security-azure/src/main/resources/application.properties", (follow the tutorial - https://www.youtube.com/watch?v=O6tlkpFmZds)
 * Setup Azure AD tenant-id, client-id, client secret and user group (following the tutorial here https://www.youtube.com/watch?v=cczyS4D-RDA) and then add your credeentials in the file "spring-security-azure/src/main/resources/application.yml"
+* Create Microsoft MySQL database instance(setup cloud server) and then replace connection string, username and password in file "spring-security-azure/src/main/resources/application.properties", (follow the tutorial - https://www.youtube.com/watch?v=O6tlkpFmZds) and host the application as WEB Appp on Azure App service.
+* Note:- You can also setup local MySQL server databse for testing purpose and use it's credentials to update application.properties file and run your project at localhost.
 
 ## Related Screenshots!
 
